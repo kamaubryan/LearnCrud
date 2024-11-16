@@ -14,6 +14,13 @@ public class Employee {
     @Column (name = "Gender")
     private String Gender;
 
+    public Employee(int id, String department, Date doB, String gender, Object o) {
+    }
+
+    public Employee() {
+
+    }
+
     public String getDepartment() {
         return Department;
     }
@@ -36,8 +43,8 @@ public class Employee {
         return Name;
     }
 
-    public void setName(String name) {
-        Name = name;
+    public void setName(String Name) {
+        Name = Name;
     }
 
     public String getGender() {

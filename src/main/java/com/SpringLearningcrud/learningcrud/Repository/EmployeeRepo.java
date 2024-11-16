@@ -9,6 +9,8 @@ import java.util.List;
 public interface EmployeeRepo extends JpaRepository<Employee,Long> {
     List<Employee>FindbyId(int ID);
     List<Employee>FindbyName(String Name);
+
+    Iterable<Object> findByName(String Name);
 }
 //import com.SpringLearningcrud.learningcrud.Entity.Employee;
 //import com.SpringLearningcrud.learningcrud.Services.EmployeeServices;
